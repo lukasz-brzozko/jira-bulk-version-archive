@@ -107,6 +107,8 @@
     );
 
     currentTarget.idle();
+
+    if (frontPortalRows.length === 0) return;
     window.location.reload();
   };
 

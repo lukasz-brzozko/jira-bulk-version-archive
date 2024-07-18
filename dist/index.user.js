@@ -104,8 +104,14 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             }));
           case 8:
             currentTarget.idle();
+            if (!(frontPortalRows.length === 0)) {
+              _context2.next = 11;
+              break;
+            }
+            return _context2.abrupt("return");
+          case 11:
             window.location.reload();
-          case 10:
+          case 12:
           case "end":
             return _context2.stop();
         }
